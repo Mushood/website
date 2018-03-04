@@ -27,3 +27,6 @@ Route::get('profiles/{id}', 'ProfileShowController')->name('profile');
 
 /** Redirects*/
 Route::redirect('tutorials', '/blog/tutorials');
+
+/** Member locations **/
+Route::get('/members/locations', 'MemberLocationController@locations')->name('member.locations');
